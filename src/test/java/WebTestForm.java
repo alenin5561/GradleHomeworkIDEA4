@@ -21,13 +21,12 @@ public class WebTestForm {
     WebDriver driver;
 
     @BeforeEach
-    void setupTest() {
-        driver = new ChromeDriver();
+    void setupTest(){
+        Selenide.open("http://localhost:9999")
     }
 
     @Test
     void testForm() {
-        Selenide.open("http://localhost:9999");
         $("[placeholder='Город']").setValue("Санкт-Петербург");
         $("[placeholder='Дата встречи']").doubleClick().sendKeys(Keys.DELETE);
         $("[placeholder='Дата встречи']").setValue("17.09.2022");
@@ -40,7 +39,6 @@ public class WebTestForm {
     }
     @Test
     void testFormWithoutCheckbox() {
-        Selenide.open("http://localhost:9999");
         $("[placeholder='Город']").setValue("Санкт-Петербург");
         $("[placeholder='Дата встречи']").doubleClick().sendKeys(Keys.DELETE);
         $("[placeholder='Дата встречи']").setValue("17.09.2022");
@@ -52,7 +50,6 @@ public class WebTestForm {
 
     @Test
     void testFormName() {
-        Selenide.open("http://localhost:9999");
         $("[placeholder='Город']").setValue("Санкт-Петербург");
         $("[placeholder='Дата встречи']").doubleClick().sendKeys(Keys.DELETE);
         $("[placeholder='Дата встречи']").setValue("17.09.2022");
@@ -66,7 +63,6 @@ public class WebTestForm {
 
     @Test
     void testFormWrongCity() {
-        Selenide.open("http://localhost:9999");
         $("[placeholder='Город']").setValue("НьюЙорк");
         $("[placeholder='Дата встречи']").doubleClick().sendKeys(Keys.DELETE);
         $("[placeholder='Дата встречи']").setValue("17.09.2022");
@@ -79,7 +75,6 @@ public class WebTestForm {
 
     @Test
     void testFormWrongDate() {
-        Selenide.open("http://localhost:9999");
         $("[placeholder='Город']").setValue("Санкт-Петербург");
         $("[placeholder='Дата встречи']").doubleClick().sendKeys(Keys.DELETE);
         $("[placeholder='Дата встречи']").setValue("10.09.2022");
@@ -92,7 +87,6 @@ public class WebTestForm {
 
     @Test
     void testFormWrongName() {
-        Selenide.open("http://localhost:9999");
         $("[placeholder='Город']").setValue("Санкт-Петербург");
         $("[placeholder='Дата встречи']").doubleClick().sendKeys(Keys.DELETE);
         $("[placeholder='Дата встречи']").setValue("17.09.2022");
@@ -105,7 +99,6 @@ public class WebTestForm {
 
     @Test
     void testFormWrongPhoneNumber() {
-        Selenide.open("http://localhost:9999");
         $("[placeholder='Город']").setValue("Санкт-Петербург");
         $("[placeholder='Дата встречи']").doubleClick().sendKeys(Keys.DELETE);
         $("[placeholder='Дата встречи']").setValue("17.09.2022");
@@ -119,7 +112,6 @@ public class WebTestForm {
     //пустая форма без чек бокса
     @Test
     void testFormEmptyWithCheckbox() {
-        Selenide.open("http://localhost:9999");
         $("[placeholder='Город']").setValue("");
         $("[placeholder='Дата встречи']").doubleClick().sendKeys(Keys.DELETE);
         $("[placeholder='Дата встречи']").setValue("");
@@ -132,7 +124,6 @@ public class WebTestForm {
 
     @Test
     void testFormEmptyWithoutCheckbox() {
-        Selenide.open("http://localhost:9999");
         $("[placeholder='Город']").setValue("");
         $("[placeholder='Дата встречи']").doubleClick().sendKeys(Keys.DELETE);
         $("[placeholder='Дата встречи']").setValue("");
