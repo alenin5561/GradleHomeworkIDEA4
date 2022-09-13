@@ -34,7 +34,6 @@ public class WebTestForm {
     void teardown() {
         driver.quit();
     }
-    //Разобраться с датами!
     @Test
     void testForm() {
         Selenide.open("http://localhost:9999");

@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0082799f-02fb-44bd-b893-0421ff0cee11" name="Changes" comment="appveyor">
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+    <list default="true" id="0082799f-02fb-44bd-b893-0421ff0cee11" name="Changes" comment="build">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/WebTestForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WebTestForm.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +61,30 @@
       <recent name="C:\Netology Homeworks\GradleHomework4\artifacts" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.WebTestForm.testFormWrongDate">
+  <component name="RunManager" selected="Gradle.WebTestForm">
+    <configuration name="WebTestForm" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;WebTestForm&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="WebTestForm.testForm" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -98,29 +122,6 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;WebTestForm.testFormEmpty&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="WebTestForm.testFormName" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;WebTestForm.testFormName&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -178,11 +179,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.WebTestForm" />
         <item itemvalue="Gradle.WebTestForm.testFormWrongDate" />
         <item itemvalue="Gradle.WebTestForm.testForm" />
         <item itemvalue="Gradle.WebTestForm.testFormEmpty" />
         <item itemvalue="Gradle.WebTestForm.testFormWithoutCheckbox" />
-        <item itemvalue="Gradle.WebTestForm.testFormName" />
       </list>
     </recent_temporary>
   </component>
@@ -230,7 +231,21 @@
       <option name="project" value="LOCAL" />
       <updated>1663087143899</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="appveyor">
+      <created>1663087279085</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1663087279085</updated>
+    </task>
+    <task id="LOCAL-00007" summary="build">
+      <created>1663087292083</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1663087292083</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -249,6 +264,7 @@
     <MESSAGE value="Test Success" />
     <MESSAGE value="Test" />
     <MESSAGE value="appveyor" />
-    <option name="LAST_COMMIT_MESSAGE" value="appveyor" />
+    <MESSAGE value="build" />
+    <option name="LAST_COMMIT_MESSAGE" value="build" />
   </component>
 </project>
