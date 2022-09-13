@@ -22,7 +22,7 @@ public class WebTestForm {
 
     @BeforeEach
     void setupTest(){
-        Selenide.open("http://localhost:9999")
+        Selenide.open("http://localhost:9999");
     }
 
     @Test
