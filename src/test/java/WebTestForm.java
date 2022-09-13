@@ -20,20 +20,11 @@ public class WebTestForm {
 
     WebDriver driver;
 
-    @BeforeAll
-    static void setupClass() {
-        WebDriverManager.chromedriver().setup();
-    }
-
     @BeforeEach
     void setupTest() {
         driver = new ChromeDriver();
     }
 
-    @AfterEach
-    void teardown() {
-        driver.quit();
-    }
     @Test
     void testForm() {
         Selenide.open("http://localhost:9999");
